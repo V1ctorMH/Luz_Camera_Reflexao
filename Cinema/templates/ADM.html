@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - Cinema Luz, Câmera e Reflexão</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/AdminDashboard.css') }}">
+    <link rel="stylesheet" href="../static/CSS/AdminDashboard.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"> <h1>Cinema Luz, Câmera e Reflexão</h1> </a>
+        </div>
+    </header>
+
+    <section class="admin-dashboard">
+        <h2>Painel Administrativo</h2>
+        <div class="dashboard-grid">
+            <div class="crud-card">
+                <h3>Gerenciar Filmes</h3>
+                <ul>
+                    <li><a href="/ADM/Cadastrado/Filmes/Cadastrar" class="btn">Cadastrar Filme</a></li>
+                    <li><a href="/Usuario/Filmes/Listar" class="btn">Listar Filmes</a></li>
+                    <li><a href="/editar/<titulo>" class="btn">Editar Filme</a></li>
+                </ul>
+            </div>
+
+            <div class="crud-card">
+                <h3>Gerenciar Comentários</h3>
+                <ul>
+                    <li><a href="/Coments/Visualizar/Comentar" class="btn">Listar Comentários</a></li>
+                    <li><a href="/limpar_comentarios" class="btn">Deletar Comentários</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cinema Luz, Câmera e Reflexão - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

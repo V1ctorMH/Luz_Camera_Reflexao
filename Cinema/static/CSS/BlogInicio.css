@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff7b54;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.header-container p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.blog-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.blog-container h2 {
+    color: #ff7b54;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.blog-post h3 {
+    color: #ff7b54;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.blog-post .summary {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.blog-post .btn {
+    color: #ff7b54;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-container {
+    background-color: #2c2c2c;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.article-container h2 {
+    color: #ff7b54;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.article-container .author {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.article-container p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.comments-section {
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.comments-section h3 {
+    font-size: 24px;
+    color: #ff7b54;
+    margin-bottom: 20px;
+}
+
+.comment {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.comment-header h4 {
+    font-size: 18px;
+    color: #ff7b54;
+}
+
+.comment-header p {
+    font-size: 12px;
+    color: #bbb;
+}
+
+.comment p {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.comment-form h4 {
+    font-size: 18px;
+    color: #ff7b54;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #444;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    border-color: #ff7b54;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7b54;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff6347;
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    color: #bbb;
+}
+
+a{
+    text-decoration: none;
+}

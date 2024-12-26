@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Cinema Luz, Câmera e Reflexão</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/Cadastro.css') }}">
+</head>
+<body>
+    <div class="cadastro-container">
+        <div class="cadastro-box">
+            <h1>Cadastro</h1>
+            <form method="POST">
+                <div class="input-group">
+                    <label for="Nome">Usuário</label>
+                    <input type="text" id="Nome" name="Nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" name="Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="Senha">Senha</label>
+                    <input type="password" id="Senha" name="Senha" required>
+                </div>
+                <button type="submit" class="btn">Registrar</button>
+            </form>
+            <p class="login-link">Já tem uma conta? <a href="/Usuario/Entrar">Faça login aqui</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cinema Luz, Câmera e Reflexão - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

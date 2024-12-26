@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo - Cinema Luz, Câmera e Reflexão</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/BlogInicio.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="/">Blog do Cinema Luz, Câmera e Reflexão</a></h1>
+            <p>Leia o artigo completo e deixe seu comentário!</p>
+        </div>
+    </header>
+
+    <main>  
+        <div class="article-container">
+            <h2>Origens</h2>
+            <p class="author">Publicado por João Miguel em 17/12/2024</p>
+            <p>bviamente as coisas não são as mesmas para sempre, tudo muda, assim como o ser
+                humano muda com o tempo, ou uma cidade muda com o tempo, uma sociedade, um modo
+                de pensar, o cinema também muda. Ao analisarmos o cinema e como ele evoluiu com o
+                tempo nos deparamos com esses três filmes muito importantes para a história do cinema.</p>
+
+            <a href="{{ url_for('static', filename='PDF/A_Teoria_do_Cinema_na_Prática.pdf') }}" download>O A Teoria do Cinema na Prática - João Miguel /</a>
+            <a href="{{ url_for('static', filename='PDF/Potemkin.pdf') }}" download> Potemkin - Victor Hugo</a>
+            <a href="{{ url_for('static', filename='PDF/Atividade_do_projeto.pdf') }}" download> Atividade do projeto - Nadla Gabriele</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cinema Luz, Câmera e Reflexão - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

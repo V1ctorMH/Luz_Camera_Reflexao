@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar e Excluir Filme - Cinema Luz, Câmera e Reflexão</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/Crud.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href='/'> <h1>Cinema Luz, Câmera e Reflexão</h1> </a>
+        </div>
+    </header>
+
+    <main class="crud-filme-container">
+        <h2>Editar ou Excluir Filme</h2>
+
+        <div class="filme-form">
+            <h4>Editar Filme</h4>
+            <form method="POST">
+                <div>
+                    <label for="autor">Autor</label>
+                    <input type="text" id="autor" name="autor" value="{{ filme.autor }}" required>
+                </div>
+                <div>
+                    <label for="genero">Gênero</label>
+                    <input type="text" id="genero" name="genero" value="{{ filme.genero }}" required>
+                </div>
+                <div>
+                    <label for="duracao">Duração (em minutos)</label>
+                    <input type="number" id="duracao" name="duracao" value="{{ filme.duracao }}" required>
+                </div>
+                <div>
+                    <label for="data_lancamento">Data de Lançamento</label>
+                    <input type="date" id="data_lancamento" name="data_lancamento" value="{{ filme.data_lancamento.strftime('%Y-%m-%d') }}" required>
+                </div>
+                <div>
+                    <label for="orcamento">Orçamento</label>
+                    <input type="number" step="0.01" id="orcamento" name="orcamento" value="{{ filme.orcamento }}" required>
+                </div>
+                <div>
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao" required>{{ filme.descricao }}</textarea>
+                </div>
+                <div>
+                    <button type="submit">Salvar alterações</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cinema Luz, Câmera e Reflexão - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

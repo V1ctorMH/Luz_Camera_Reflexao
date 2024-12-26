@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentários - Cinema Luz, Câmera e Reflexão</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/Comentarios.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href='/'> <h1>Cinema Luz, Câmera e Reflexão</h1> </a>
+        </div>
+    </header>
+
+    <main class="comentarios-container">
+        <h2>Deixe seu Comentário</h2>
+        
+        <div class="comentarios">
+            {% for comentario in Comentarios %}
+            <div class="comment">
+                <div class="comment-header">
+                    <h4>{{ comentario.Usuario }}</h4>
+                    <p>{{ comentario.Data }}</p>
+                </div>
+                <p>{{ comentario.Descricao }}</p>
+            </div>
+            {% else %}
+            <p>Não há comentários ainda.</p>
+            {% endfor %}
+        </div>
+
+        <div class="comment-form">
+            <h4>Deixe seu comentário</h4>
+            <form action="{{ url_for('ComentCadastro') }}" method="POST">
+                <div class="input-group">
+                    <label for="descricao">Comentário:</label>
+                    <textarea name="descricao" id="descricao" rows="4" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn">Adicionar Comentário</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cinema Luz, Câmera e Reflexão - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cinema Luz, Câmera e Reflexão</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/Login.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form method="POST">
+                <div class="input-group">
+                    <label for="Email">Usuário</label>
+                    <input type="text" id="Email" name="Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="Senha">Senha</label>
+                    <input type="text" id="Senha" name="Senha" required>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+            <p class="register-link">Não tem uma conta? <a href="/">Registre-se aqui</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cinema Luz, Câmera e Reflexão - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

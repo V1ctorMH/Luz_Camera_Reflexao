@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    background-color: #ff7b54;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+}
+
+.lista-filmes {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #ff7b54;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tabela-filmes {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2c2c2c;
+}
+
+.tabela-filmes th, .tabela-filmes td {
+    padding: 12px 15px;
+    text-align: left;
+    color: #ddd;
+    border-bottom: 1px solid #444;
+}
+
+.tabela-filmes th {
+    background-color: #ff7b54;
+    color: #fff;
+    font-size: 18px;
+}
+
+.tabela-filmes td {
+    font-size: 16px;
+}
+
+.tabela-filmes tr:hover {
+    background-color: #444;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    color: #bbb;
+}

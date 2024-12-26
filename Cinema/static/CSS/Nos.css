@@ -1,0 +1,112 @@
+/* Resetando o estilo padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.informacoes {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-site {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info-site h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.info-site p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-participantes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-participantes h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.participante {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.participante img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.participante-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.participante-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.foto-grande {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.foto-grande h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.foto-grande img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}

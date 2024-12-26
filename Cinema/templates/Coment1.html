@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo - Cinema Luz, Câmera e Reflexão</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/BlogInicio.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="/">Blog do Cinema Luz, Câmera e Reflexão</a></h1>
+            <p>Leia o artigo completo e deixe seu comentário!</p>
+        </div>
+    </header>
+
+    <main>  
+        <div class="article-container">
+            <h2>Eu, Tonya, Tropa de Elite e o Castelo Animado. Veja filmes que analisamos e escrevemos sobre... </h2>
+            <p class="author">Publicado por Nadla Gabriele em 17/12/2024</p>
+            <p>Durante o projeto fizemos analises um pouco afrofundadas de filmes que nos intrigaram bastante, veja agora alguns deles.</p>
+
+            <a href="{{ url_for('static', filename='PDF/Eu_Tonya.pdf') }}" download>Eu, Tonya /</a>
+            <a href="{{ url_for('static', filename='PDF/TROPA_DE_ELITE.pdf') }}" download> Tropa de Elite /</a>
+            <a href="{{ url_for('static', filename='PDF/O_Castelo_Animado.pdf') }}" download> O Castelo Animado</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cinema Luz, Câmera e Reflexão - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo - Cinema Luz, Câmera e Reflexão</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/BlogInicio.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="/">Blog do Cinema Luz, Câmera e Reflexão</a></h1>
+            <p>Leia o artigo completo e deixe seu comentário!</p>
+        </div>
+    </header>
+
+    <main>  
+        <div class="article-container">
+            <h2>Meditações sobre Filosofia Primeira</h2>
+            <p class="author">Publicado por Victor Hugo em 17/12/2024</p>
+            <p>Meditações sobre Filosofia Primeira, ou Meditações Metafísicas, é um livro escrito por René Descartes em 1641. Trata-se de um aprofundamento da filosofia elaborada nas Regras para a orientação do espírito e no Discurso sobre o método.</p>
+
+            <a href="{{ url_for('static', filename='PDF/Fichamento_das_Meditações_de_Descarte.pdf') }}" download>Fichamento das Meditações - Nadla Gabriele e João Miguel /</a>
+            <a href="{{ url_for('static', filename='PDF/Resenha_Crítica_Meditações.pdf') }}" download> Resenha Crítica Meditações - Victor Hugo /</a>
+            <a href="{{ url_for('static', filename='PDF/Fichamentos.pdf') }}" download> Fichamentos - Victor Hugo</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cinema Luz, Câmera e Reflexão - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

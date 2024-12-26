@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Site e Participantes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/Nos.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href='/'> <h1>Cinema Luz, Câmera e Reflexão</h1> </a>
+        </div>
+    </header>
+
+    <section class="informacoes">
+        <div class="info-site">
+            <h2>Sobre o Site</h2>
+            <p>O Cinema Luz, Câmera e Reflexão é uma plataforma online dedicada a fornecer informações sobre os filmes, diretores, atores e muito mais. Nossa missão é facilitar o acesso à cultura cinematográfica e promover discussões sobre o universo dos filmes.</p>
+
+            <br>
+
+            <h2>Sobre o Projeto</h2>
+            <p>O cinema, visto como uma forma de entretenimento, também é uma forma de linguagem. Ele é interpretado a partir das imagens, dos sons, da luz e do roteiro. Pensando nisso, o projeto “Luz, Câmera, Reflexão: Intersecções entre Filosofia, Cinema e História”, teve como objetivo desenvolver reflexões diversas para um público amplo, tornando possível uma visão alternativa sobre obras cinematográficas como fonte de reflexão filosófica.</p>
+
+            <br>
+
+            <h2>Resultados</h2>
+            <p>Os principais resultados obtidos no projeto incluíram as produções textuais dos monitores que refletiram sobre as obras cinematográficas assistidas, os textos filosóficos lidos e os debates realizados ao longo das atividades.</p>
+        </div>
+
+        <div class="info-participantes">
+            <h2>Participantes</h2>
+            <div class="participante">
+                <div class="participante-info">
+                    <h3>Amós Santos</h3>
+                    <p>Coordenador</p>
+                </div>
+            </div>
+
+            <div class="participante">
+                <div class="participante-info">
+                    <h3>Marciano Cavalcanti</h3>
+                    <p>Coordenador</p>
+                </div>
+            </div>
+
+            <div class="participante">
+                <div class="participante-info">
+                    <h3>Pablo Spíndola</h3>
+                    <p>Coordandor</p>
+                </div>
+            </div>
+
+            <div class="participante">
+                <div class="participante-info">
+                    <h3>João Miguel</h3>
+                    <p>Extensionista</p>
+                </div>
+            </div>
+
+            <div class="participante">
+                <div class="participante-info">
+                    <h3>Nadla Gabriele</h3>
+                    <p>Extensionista</p>
+                </div>
+            </div>
+
+            <div class="participante">
+                <div class="participante-info">
+                    <h3>Victor Hugo</h3>
+                    <p>Extensionista</p>
+                </div>
+            </div>
+
+            <div class="foto-grande">
+                <h2>Todos os Participantes</h2>
+                <img src="{{ url_for('static', filename='imagens/Foto.jpeg') }}" alt="Foto dos Participantes">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cinema Luz, Câmera e Reflexão - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
